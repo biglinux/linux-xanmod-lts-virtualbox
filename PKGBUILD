@@ -10,7 +10,7 @@ _extramodules=$(find /usr/lib/modules -type d -iname 5.15.89*xanmod* | rev | cut
 
 pkgname=("$_linuxprefix-virtualbox-host-modules")
 pkgver=7.0.6
-_pkgver=7.0.6
+_pkgver="${pkgver}_OSE"
 pkgrel=515891
 pkgdesc='Virtualbox host kernel modules for Manjaro Kernel'
 arch=('x86_64')
