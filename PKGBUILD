@@ -6,7 +6,7 @@
 # Sébastien Luttringer <seblu@aur.archlinux.org>
 
 _linuxprefix=linux-xanmod-lts
-_kernver=$(find /usr/lib/modules -type d -iname 6.1.76*xanmod* | rev | cut -d "/" -f1 | rev)
+_kernver="$(cat /usr/src/${_linuxprefix}/version)"
 
 pkgname=("$_linuxprefix-virtualbox-host-modules")
 pkgver=7.0.12
